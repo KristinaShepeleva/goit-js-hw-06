@@ -5,7 +5,7 @@ const numberCategories = itemRef.length;
 console.log(`Number of categories: ${numberCategories}`);
 
 
-itemRef.forEach(function callback(element) {
+itemRef.forEach(function (element) {
   const titleRef = element.querySelector("h2");
   console.log(`Category: ${titleRef.textContent}`);
     

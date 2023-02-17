@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item {
+  font-weight: 500;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
