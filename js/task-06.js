@@ -3,14 +3,15 @@ const textInput = document.querySelector("#validation-input");
 const dataLengthRef = Number(textInput.getAttribute("data-length"));
 
 
-textInput.addEventListener("blur", () => {
+textInput.addEventListener("blur", (event) => {
+    const currenrValue = event.currentTarget.value.length;
+    console.log(currenrValue);
+    
+    if (currenrValue === dataLengthRef) {
+        textInput.classList.add("valid"); 
+    };
 
-    if (textInput.value.length === dataLengthRef) {
-
-        textInput.classList.add("valid");
-        console.log(textInput.classList);
-    } else {
-        textInput.classList.replace("valid", "invalid");
-        console.log(textInput.classList);
-    } 
+    if (currenrValue !== dataLengthRef) {
+        textInput.classList.add("invalid"); 
+    };
 });
