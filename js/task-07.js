@@ -5,7 +5,10 @@ const sizeTextRef = document.querySelector('#text');
 
 //потрібно в значення початкового фортсайза поставити початкове значення інпута, щоб не було скачків розміру текста.
 
-sizeTextRef.style.fontSize = inputRef.setAttribute("value", "16");
+
+const minValue = inputRef.getAttribute("min");
+
+sizeTextRef.style.fontSize = inputRef.setAttribute("value", minValue);
 
 inputRef.addEventListener('input', (event) => {
    
