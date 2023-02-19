@@ -9,9 +9,11 @@ textInput.addEventListener("blur", (event) => {
     
     if (currenrValue === dataLengthRef) {
         textInput.classList.add("valid"); 
+        textInput.classList.remove("invalid");
     };
 
     if (currenrValue !== dataLengthRef) {
         textInput.classList.add("invalid"); 
+        textInput.classList.remove("valid");
     };
 });

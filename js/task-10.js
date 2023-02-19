@@ -12,6 +12,9 @@ function getRandomHexColor() {
 //  <button type="button" data-destroy>Destroy</button>
 //</div>
 
+const controlsRef = document.querySelector("#controls");
+
+
 //<div id="boxes"></div>
 
 //Створи функцію createBoxes(amount), яка приймає один параметр - число. Функція створює стільки <div>, скільки вказано в amount і додає їх у div#boxes.
